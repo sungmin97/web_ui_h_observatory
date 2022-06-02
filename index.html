@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커피러버</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/vegas.min.css">
+    <script src="javascript/jquery-1.12.3.js"></script>
+    <script src="javascript/script.js" defer type="text/javascript"></script>
+    <!-- [if lt IE9] 
+        <script src ="js/html5shiv.js"></script> -->
+        <!-- ![endif] -->
+</head>
+
+<body>
+<div id="layer">
+    <div class="layer_up">
+        <div class="uptitle">커피집 운영 안내</div>
+        <div class="upbody">저희 커피러버를 사랑해주시고 이용해주시는 고객님들께 안내드립니다 &lt;커피러버&gt;가 이번 동계 시즌에 리모델링
+            을 시작하였는데, 불가피하게 2022년 3월 8 일까지 리모델링 기간이 연장되어 이렇게 안내드립니다. 감사합니다
+        </div>
+        <div class="btn">닫기</div>
+    </div>
+</div>
+
+
+    <wrapper>
+    <header>
+        <div class="top">
+            <div class="logo">
+                <a href="#"><img src="images/커피.jpg" alt="로고이미지"></a>
+            </div>
+            <nav class="menu">
+                <ul class="navi">
+                    <li>
+                        <a href="#">커피러버소개</a>
+                        <ul class="submenu">
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">커피러버소식</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">이용안내</a>
+                        <ul class="submenu">
+                            <li><a href="#">오픈시간</a></li>
+                            <li><a href="#">이번주 추천 커피</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">커피러버예약</a>
+                        <ul class="submenu">
+                            <li><a href="#">좌석예약</a></li>
+                            <li><a href="#">예약확인</a></li>
+                            <li><a href="#">예약취소</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">커뮤니티</a>
+                        <ul class="submenu">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">방문후기</a></li>
+                            <li><a href="#">자유게시판</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="bodywrap">
+        <div class="imgslide">
+          
+        </div>
+
+        <div class="contents">
+            <ul class="tabmenu">
+                <li class="active"><a href="#">공지사항</a>
+                    <div class="notice">
+                        <ul>
+                            <li><a href="#">
+                                    커피러버 휴업연장안내
+                                    <span>2022.02.08</span>
+                                </a></li>
+                            <li><a href="#">
+                                    동계기간  리모델링 합니다
+                                    <span>2022.01.09</span>
+                                </a></li>
+                            <li><a href="#">
+                                    학생대상 커피할인 안내
+                                    <span>2021.11.10</span>
+                                </a></li>
+                            <li><a href="#">
+                                    제1회 바리스타 대회 개최합니다.
+                                    <span>2021.10.11</span>
+                                </a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">판매커피</a>
+                    <div class="gallery">
+                        <ul>
+                            <li><a href="#"><img src="images/coffee1.jpg" alt="갤러리 이미지1"></a></li>
+                            <li><a href="#"><img src="images/coffee2.jpg" alt="갤러리 이미지2"></a></li>
+                            <li><a href="#"><img src="images/coffe3.jpg" alt="갤러리 이미지3"></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="otherwrap">
+                <div class="banner">
+                    <a href="#">
+                        <img src="images/lstargram.jpg" alt="배너이미지">
+                        <h4 class="bntext">커피러버 인스타 바로가기</h4>
+                    </a>
+                </div>
+                <div class="shortcut">
+                    <a href="#">
+                        <img src="images/길찾기.jpg" alt="바로가기 이미지">
+                        <h4 class="sctext">커피러버 길찾기</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="btlogo">
+            <a href="#"><img src="images/커피.jpg" alt="하단로고이미지"></a>
+        </div>
+        <div class="site">
+            <div class="btmenu">
+                <ul>
+                    <li><a href="#">오시는길</a></li>
+                    <li><a href="#">카카오톡</a></li>
+                    <li><a href="#">블로그</a></li>
+                </ul>
+            </div>
+            <div class="copy">COPYRIGHT © by WEBDESIGN. ALL RIGHT RESERVED</div>
+        </div>
+        <script src="javascript/vegas.min.js"></script>
+        <script>
+            $(function(){
+                $(".imgslide").vegas({
+                        slides:[
+                        {src:'images/coffee.jpg',
+                        video:{
+                            src:['videos/coffemake.mp4'],
+                            loop:true,
+                            mute:true
+                            }
+                        }
+                    ],
+                });
+            });
+        </script>
+    </footer>
+</wrapper>
+</body>
+
+</html>
